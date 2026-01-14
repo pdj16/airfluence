@@ -1,0 +1,4118 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 1.6;
+    color: #6b6b6b;
+    font-optical-sizing: auto;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.8),
+            rgba(255, 255, 255, 0.8)),
+        url("../../images/dron/bg1.jpg");
+    ;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+
+/* BACKGROUND DRONE LAYER */
+.drone-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 1;
+}
+
+/* DRONE IMAGE */
+.drone {
+    position: absolute;
+    width: 120px;
+    opacity: 0.35;
+    animation: droneFlight 18s linear infinite;
+}
+
+/* MAIN CONTENT ABOVE DRONE */
+.content {
+    position: relative;
+    z-index: 2;
+    padding: 100px;
+    color: white;
+}
+
+/* DRONE FLIGHT PATH */
+@keyframes droneFlight {
+    0% {
+        transform: translate(-150px, 60vh) scale(0.8) rotate(0deg);
+    }
+
+    20% {
+        transform: translate(20vw, 40vh) scale(1) rotate(5deg);
+    }
+
+    40% {
+        transform: translate(50vw, 30vh) scale(1.1) rotate(-5deg);
+    }
+
+    60% {
+        transform: translate(75vw, 50vh) scale(0.9) rotate(8deg);
+    }
+
+    80% {
+        transform: translate(90vw, 35vh) scale(1) rotate(-3deg);
+    }
+
+    100% {
+        transform: translate(110vw, 60vh) scale(0.8) rotate(0deg);
+    }
+}
+
+.drone:nth-child(2) {
+    animation-delay: -6s;
+    width: 90px;
+    opacity: 0.25;
+}
+
+
+
+/*theme css*/
+a {
+    color: #0d1f38;
+    transition: .5s;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+    opacity: 0.7;
+}
+
+p {
+    font-style: normal;
+}
+
+h1,
+h1 a,
+h2,
+h2 a,
+h3,
+h3 a,
+h4,
+h4 a,
+h5,
+h5 a,
+h6,
+h6 a {
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    line-height: 1.2;
+    font-weight: 600;
+    -webkit-transition: .5s;
+    transition: .5s;
+    font-size: 23px;
+    transition: .5s;
+    margin-bottom: 5px;
+    color: #0c1d60;
+}
+
+.btn-primary:focus,
+select:focus,
+textarea:focus,
+input:focus {
+    box-shadow: none !important;
+}
+
+textarea,
+input {
+    outline: none;
+}
+
+a:focus,
+.btn:focus {
+    text-decoration: none;
+    outline: none;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.capitalize {
+    text-transform: capitalize;
+}
+
+.glass-img {
+    width: 320px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 18px;
+    transition: all 0.5s ease;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4);
+}
+
+/* Glass Hover Effect */
+.glass-img:hover {
+    transform: scale(1.05);
+    filter: blur(2px) brightness(1.1);
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.35);
+}
+
+.airFlue_section_title_inner h1,
+.airFlue_section_title_inner h2,
+.airFlue_section_title_inner h3 {
+    font-size: 32px;
+    margin: auto;
+    font-weight: 600;
+    line-height: 1.4;
+}
+
+.airFlue_section_title_inner h3 {
+    padding: 5px 0 0 0;
+}
+
+.airFlue_section_title_inner h2 {
+    font-size: 18px;
+    display: inline-block;
+    border-radius: 30px;
+    margin-bottom: 3px;
+    color: #0d1f38;
+}
+
+.airFlue_section_title {
+    margin-bottom: 45px;
+}
+
+.airFlue_section_title_inner p {
+    width: 100%;
+    padding: 10px 0px 0px 0px;
+    margin-top: 10px;
+}
+
+.airFlue_all_pd0 {
+    padding: 0;
+}
+
+/* ===== 1. Top Menu CSS ===== */
+.em40_header_area_main.hdisplay_none {
+    display: none;
+}
+
+.air-header-top {
+    background: #0d1f38;
+    padding: 10px 200px;
+}
+
+.top-address p {
+    margin-bottom: 0;
+}
+
+.top-address p span,
+.top-address p a {
+    margin-right: 20px;
+}
+
+.top-address p span i,
+.top-address p a i {
+    font-size: 13px;
+    color: #fff;
+    margin-right: 5px;
+}
+
+.top-address p span i:hover,
+.top-address p a i:hover {}
+
+.top-address p a {
+    display: inline-block;
+    text-decoration: none;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+
+/* TOP socia CSS */
+.top-right-menu ul.social-icons {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.top-right-menu ul.social-icons li {
+    display: inline-block;
+    margin-left: 15px;
+    position: relative;
+}
+
+.top-right-menu ul.social-icons li a {
+    display: inline-block;
+    text-decoration: none;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    font-size: 15px;
+}
+
+.top-welcomet p span,
+.top-welcomet p a,
+.top-welcome p span,
+.top-welcome p a,
+.top-welcome p,
+.top-address p a,
+.top-right-menu ul.social-icons li a,
+.top-address p span {
+    color: #fff;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.top-welcome p a:hover {
+    color: #17161a;
+}
+
+.top-right-menu .social-icons li a:hover,
+.top-right-menu .social-icons li a i:hover {
+    color: #17161a;
+}
+
+.top-both-p0 .top-address p a,
+.top-both-p0 .top-address p span {
+    margin-right: 0px;
+    margin-left: 12px;
+}
+
+/* ===== 2. Menu Area CSS ===== */
+.air_nav_area,
+.trp_nav_area .container-fluid,
+.transprent-menu .air_nav_area .container-fluid {
+    padding-right: 150px;
+    padding-left: 150px;
+}
+
+.air_nav_area.prefix,
+.hbg2 {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.trp_nav_area {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 9999;
+    transition: .5s;
+}
+
+.logo-right,
+.logo-left {
+    align-items: center;
+}
+
+.mobile_menu_logo.text-center {
+    padding: 20px 0;
+}
+
+.bg-video {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    object-fit: cover;
+}
+
+.video-overlay2 {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(13, 31, 56, 0.2);
+}
+
+/* LOGO CSS */
+.logo a {
+    display: inline-block;
+}
+
+/* logo sticky */
+.air-main-menu .logo a.main_sticky_main_l {
+    display: block;
+}
+
+.air-main-menu .logo a.main_sticky_l {
+    display: none;
+}
+
+/* logo pre */
+.air-main-menu .prefix .logo a.main_sticky_main_l {
+    display: none;
+}
+
+.air-main-menu .prefix .logo a.main_sticky_l {
+    display: block;
+}
+
+/* MENU text CSS */
+.air_menu ul {
+    text-align: right;
+    list-style: none;
+}
+
+.air_menu>ul>li {
+    display: inline-block;
+    position: relative;
+}
+
+.air_menu>ul>li>a {
+    display: block;
+    margin: 45px 10px;
+    transition: .5s;
+    position: relative;
+    font-size: 17px;
+    font-weight: 700;
+    color: #fff;
+    font-family: "Inter", sans-serif;
+}
+
+.air_menu>ul>li>a:before,
+.air_menu>ul>li.current>a:before {
+    background: #ffb600 none repeat scroll 0% 0;
+    bottom: -7px;
+    content: "";
+    height: 2px;
+    left: 0;
+    margin: auto;
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    position: absolute;
+    right: 0;
+    -webkit-transition: all 0.5s ease 0s;
+    transition: all 0.5s ease 0s;
+    width: 15%;
+    display: none;
+}
+
+.air_menu ul li:last-child a {
+    margin-right: 15px !important;
+}
+
+/* .air_menu>ul>li.current>a,
+.air_menu>ul>li:hover>a,
+.creative_header_menu>ul>li:hover>a {
+    color: #0d1f38;
+    background-color: transparent;
+} */
+
+.air_menu>ul>li:hover>a:before,
+.air_menu>ul>li.current>a:before {
+    opacity: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+}
+
+.transprent-menu .air_nav_area {
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 9999;
+    background-color: transparent;
+    padding: 0;
+    transition: .5s;
+    position: absolute;
+}
+
+.air_nav_area.postfix {
+    -webkit-transition: .3s;
+    transition: .3s;
+    position: absolute;
+    left: 15px;
+    right: 15px;
+    top: 65px;
+    border-radius: 100px;
+    width: auto;
+    z-index: 999;
+    background-color: rgba(13, 31, 56, 0.2);
+
+}
+
+.air_nav_area.prefix,
+.hbg2 {
+    background-color: rgba(13, 31, 56, 0.95);
+    position: sticky;
+    top: 0;
+    border-radius: 0;
+}
+
+.air_nav_area.prefix .air_menu>ul>li>a {
+    color: #fff;
+}
+
+.air_nav_area.prefix .air_menu>ul>li.current>a {
+    color: #0d1f38;
+}
+
+.search_popup_button,
+.tx_mmenu_together {
+    align-items: center;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.tx_mmenu_together .donate-btn-header {
+    padding: 0;
+}
+
+.prefix .main_menu_header_address_text h3,
+.prefix .main_menu_header_address_text h4 a,
+.prefix .main_menu_header_icon i {
+    color: #fff;
+}
+
+/* sub menu style */
+.air_menu ul .sub-menu {
+    position: absolute;
+    left: 0;
+    top: 130%;
+    width: 240px;
+    text-align: left;
+    background: #fff;
+    margin: 0;
+    padding: 15px 8px 8px 25px;
+    z-index: 9999;
+    box-shadow: 0 0 30px rgb(0 0 0 / 9%);
+    transition: .2s;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.air_menu ul li:hover>.sub-menu {
+    transition: .5s;
+    opacity: 1;
+    visibility: visible;
+    top: 100%;
+    z-index: 9;
+}
+
+.air_menu ul .sub-menu li {
+    position: relative;
+    transition: .5s;
+}
+
+.air_menu ul .sub-menu li a {
+    display: block;
+    margin: 0;
+    margin-bottom: 6px;
+    letter-spacing: normal;
+    font-size: 18px;
+    font-weight: 500;
+    transition: .5s;
+    color: #0a0a0a;
+    visibility: inherit !important;
+    padding: 4px 0px;
+    font-family: "Inter", sans-serif;
+}
+
+.air_menu ul .sub-menu li:hover>a,
+.air_menu ul .sub-menu .sub-menu li:hover>a,
+.air_menu ul .sub-menu .sub-menu .sub-menu li:hover>a,
+.air_menu ul .sub-menu .sub-menu .sub-menu .sub-menu li:hover>a {
+    color: #14b1bb;
+}
+
+.air_menu ul .sub-menu li:hover {
+    margin-left: 16px;
+}
+
+.air_menu ul .sub-menu li:before {
+    left: -18px;
+}
+
+.air_menu ul .sub-menu li:hover:before {
+    opacity: 1;
+}
+
+.air_menu ul .sub-menu li:before {
+    opacity: 0;
+    -webkit-transition: .1s;
+    transition: .1s;
+    position: absolute;
+    top: 50%;
+    content: "//";
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.air_menu ul .sub-menu .sub-menu .sub-menu .sub-menu li:hover>a,
+.air_menu ul .sub-menu .sub-menu .sub-menu li:hover>a,
+.air_menu ul .sub-menu .sub-menu li:hover>a,
+.air_menu ul .sub-menu li:hover:before,
+.air_menu ul .sub-menu li:hover>a {
+    color: #0d1f38;
+}
+
+/* sub menu 2 */
+.air_menu ul .sub-menu .sub-menu {
+    left: 100%;
+    top: 130%;
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    visibility: hidden;
+}
+
+.air_menu ul .sub-menu li:hover>.sub-menu {
+    opacity: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    visibility: visible;
+    top: 0%;
+}
+
+/* sub menu 3 */
+.air_menu ul .sub-menu .sub-menu li {
+    position: relative;
+}
+
+.air_menu ul .sub-menu .sub-menu .sub-menu {
+    right: 100%;
+    left: auto;
+    top: 130%;
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    visibility: hidden;
+}
+
+.air_menu ul .sub-menu .sub-menu li:hover>.sub-menu {
+    opacity: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    visibility: visible;
+    top: 0%;
+}
+
+/* sub menu 4 */
+.air_menu ul .sub-menu .sub-menu .sub-menu li {
+    position: relative;
+}
+
+.air_menu ul .sub-menu .sub-menu .sub-menu li:hover>.sub-menu {
+    opacity: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    visibility: visible;
+    top: 0%;
+}
+
+/* has menu icon */
+.air-main-menu .menu-item-has-children>a:after {
+    margin-left: 8px;
+    content: "\f107";
+    font-family: FontAwesome !important;
+    opacity: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    font-size: 13px;
+    opacity: .5;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+    font-weight: 600;
+}
+
+.air-main-menu .menu-item-has-children .menu-item-has-children>a:after {
+    margin-left: 8px;
+    content: "\f107";
+}
+
+/* quearys area css */
+.air_menu.main-search-menu>.em-header-quearys,
+.em-quearys-top.msin-menu-search {
+    display: inline-block;
+}
+
+.em-top-quearys-area {
+    position: relative;
+}
+
+.air_menu div.em-header-quearys {
+    text-align: center;
+}
+
+.em-quearys-inner {
+    visibility: hidden;
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: -150%;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0);
+    z-index: 10000;
+    -webkit-transition: all 0s 0s cubic-bezier(0.32, 0, 0, 1), background .3s 0s cubic-bezier(0.32, 0, 0, 1), -webkit-transform .3s .15s cubic-bezier(0.32, 0, 0, 1);
+    transition: all 0s 0s cubic-bezier(0.32, 0, 0, 1), background .3s 0s cubic-bezier(0.32, 0, 0, 1), -webkit-transform .3s .15s cubic-bezier(0.32, 0, 0, 1);
+    transition: all 0s 0s cubic-bezier(0.32, 0, 0, 1), transform .3s .15s cubic-bezier(0.32, 0, 0, 1), background .3s 0s cubic-bezier(0.32, 0, 0, 1);
+    transition: all 0s 0s cubic-bezier(0.32, 0, 0, 1), transform .3s .15s cubic-bezier(0.32, 0, 0, 1), background .3s 0s cubic-bezier(0.32, 0, 0, 1), -webkit-transform .3s .15s cubic-bezier(0.32, 0, 0, 1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    visibility: hidden;
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    left: -150%;
+    background: rgba(0, 0, 0, 0);
+}
+
+.em-s-open {
+    visibility: visible;
+    opacity: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    left: 0;
+    background: #000000e6 !important;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+
+.em-quearys-form {
+    width: 100%;
+    max-width: 895px;
+    margin: auto;
+    padding: 30px 0;
+}
+
+.top-form-control {
+    position: relative;
+}
+
+.top-form-control input {
+    background: transparent;
+    color: #fff;
+    font-size: 50px;
+    font-weight: 500;
+    height: 100px;
+    padding: 0 40px 0 15px;
+    width: 100%;
+    border: none;
+    -webkit-transition: 1s;
+    -webkit-transition: .5s;
+    transition: .5s;
+    border-bottom: 3px solid #fff;
+}
+
+.top-form-control input::placeholder {
+    color: #fff;
+}
+
+textarea,
+input {
+    outline: none;
+}
+
+.top-form-control button.top-quearys-style {
+    position: absolute;
+    right: 6px;
+    top: 50%;
+    background: transparent;
+    font-size: 45px;
+    border: none;
+    color: #fff;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.main-search-menu .em-header-quearys .em-quearys-menu i {
+    background: 0;
+    background: #0d1f38;
+    font-size: 17px;
+    margin-left: 10px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.air_nav_area.prefix .main-search-menu .em-header-quearys .em-quearys-menu i {
+    color: #fff;
+}
+
+.mrt10 {
+    margin-top: 10px;
+}
+
+.em-quearys-menu i {
+    background: #0d1f38;
+    border-radius: 50px;
+    display: inline-block;
+    text-align: center;
+    height: 36px;
+    width: 36px;
+    line-height: 36px;
+    font-size: 17px;
+    color: #fff;
+}
+
+.main_menu_address_a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.main_menu_address_a::before {
+    background: #fbfbfb40;
+}
+
+.main_menu_address_a:before {
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 107px;
+    left: 0;
+}
+
+.main_menu_header_icon {
+    margin-left: 25px;
+    margin-right: 10px;
+}
+
+.main_menu_header_icon i {
+    color: #14b1bb;
+    font-size: 30px;
+}
+
+.main_menu_header_address_text h3,
+.main_menu_header_address_text h4 a {
+    margin: 0;
+    font-weight: 600;
+    font-size: 18px;
+
+}
+
+.main_menu_header_address_text h3 {
+    color: #14b1bb;
+}
+
+.main_menu_header_address_text h4 {
+    margin-bottom: 0;
+    color: #030925;
+}
+
+/* mobile-menu  */
+.mobile-menu {
+    display: none !important;
+}
+
+.mobile_logo_area {
+    display: none !important;
+}
+
+.mobile_menu_logo.text-center {
+    padding: 20px 0;
+}
+
+.mean-container .mean-bar {
+    padding: 0;
+}
+
+.main_menu_div {
+    position: relative;
+}
+
+.mean-container .mean-bar {
+    float: none;
+    background: #0d1f38;
+    overflow: hidden;
+}
+
+/* menu button */
+a.dtbtn {
+    border: none;
+    display: block;
+    font-size: 18px;
+    margin-left: 20px;
+    font-weight: 600;
+    border-radius: 5px;
+    padding: 13px 25px;
+    background: #0d1f38;
+    color: #fff;
+}
+
+a.dtbtn:hover {
+    background: #0d1f68;
+}
+
+/* End Menu Area CSS */
+/* ===== 3. Slider Area CSS ===== */
+.airFlue_swiper_area {
+    overflow: hidden;
+    position: relative;
+}
+
+.video_page_area {
+    position: relative;
+}
+
+.video_page_area::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #564bc6;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: .38;
+    transition: background .3s, border-radius .3s, opacity .3s;
+    z-index: 9;
+}
+
+.airFlue_swiper_height {
+    position: relative;
+    background-size: cover;
+    background-position: center center;
+    height: 950px;
+}
+
+.text-left .airFlue_swiper_content h1,
+.text-left .airFlue_swiper_content h2,
+.text-left .airFlue_swiper_content h3,
+.text-left .airFlue_swipers_title h4,
+.text-right .airFlue_swiper_content h1,
+.text-right .airFlue_swiper_content h2,
+.text-right .airFlue_swiper_content h3,
+.text-right .airFlue_swipers_title h4 {
+    width: 60%;
+}
+
+.airFlue_swiper_content h1 {
+    color: #FFFFFF;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.airFlue_swiper_content h2,
+.airFlue_swiper_content h3 {
+    font-size: 70px;
+    font-weight: 700;
+    line-height: 1.2;
+    color: #fff;
+}
+
+.airFlue_swiper_content h2 {
+    margin: 21px auto 23px 0;
+}
+
+.airFlue_swiper_area3 .airFlue_swiper_content h2 {
+    margin: 30px auto 23px 0;
+}
+
+.airFlue_swiper_content h3 {
+    padding: 0 0 20px;
+}
+
+.air_single_event:hover .event_page_title h2 a,
+.airFlue_swiper_content h1 span,
+.airFlue_swiper_content h2 span,
+.airFlue_swiper_content h3 span {
+    color: #564bc6;
+}
+
+.airFlue_swiper_content p {
+    color: #fff;
+    font-family: "Nunito", Sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 0px 0 0;
+    width: 50%;
+}
+
+.airFlue_swiper_content {
+    position: relative;
+    top: 46%;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
+.airFlue_sw_text_area {
+    margin: auto;
+    width: 75%;
+    height: 100%;
+}
+
+.text-left .airFlue_slider_thumb {
+    position: absolute;
+    right: 100px;
+    top: 52%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+/* button css */
+.airFlue_btn {
+    display: inline-block;
+    padding: 17px 45px;
+    text-align: center;
+    position: relative;
+    margin-right: 15px;
+    z-index: 2;
+    transition: 1s;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: 600;
+    border: 2px solid #fff;
+    background: #0d1f38;
+}
+
+.slider_btn .airFlue_btn {
+    padding: 15px 30px;
+    background: #FFFFFF00;
+    color: #fff;
+    border: 2px solid #fff;
+}
+
+.slider_btn .airFlue_btn:hover {
+    background: #fff;
+    color: #0d1f38;
+}
+
+.after_btn.airFlue_btn:after {
+    position: absolute;
+    left: 5px;
+    opacity: 1;
+    top: 5px;
+    content: "";
+    transition: all .5s ease;
+    width: 100%;
+    height: 100%;
+}
+
+.after_btn.airFlue_btn:after {
+    border: 1px solid #564bc6;
+}
+
+.airFlue_btn:hover {
+    background: #fff;
+    color: #0d1f38;
+}
+
+.after_btn.airFlue_btn:hover:after {
+    left: 0;
+    top: 0;
+}
+
+.after_btn.airFlue_btn:hover:after {
+    border-color: #cb8346;
+}
+
+.airFlue_swiper_content .airFlue_btn.active {
+    display: inline-block
+}
+
+.slider_btn .airFlue_btn.active {
+    background: #fff;
+    color: #000;
+    background-color: #fff;
+    border-style: solid;
+    border-color: #fff;
+    border-width: 1px;
+}
+
+.airFlue_btn.active:hover,
+.airFlue_butn {
+    background: #00aeff;
+    color: #fff;
+    border: 1px solid #00aeff;
+}
+
+.tx_svd_icon,
+.slider_btn .airFlue_btn.active:hover,
+.airFlue_video_btn i,
+.airFlue_video_btn i:after,
+.air_slider_icon ul li a i {}
+
+.slider_btn {
+    margin-top: 53px;
+}
+
+/* slider video button */
+.airFlue_video_btn {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.airFlue_video_btn i {
+    position: relative;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    line-height: 50px;
+    display: inline-block;
+    -webkit-transition: .5s;
+    transition: .5s;
+    border-radius: 50%;
+    margin-right: 10px;
+    font-size: 20px;
+    color: #0d1f38;
+}
+
+.airFlue_video_btn i:after {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    top: 0;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation: airFlue_squares 1.5s ease-in-out infinite;
+    animation: airFlue_squares 1.5s ease-in-out infinite;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    background: #fff;
+}
+
+.swiper-container-horizontal>.swiper-pagination-progressbar,
+.swiper-container-vertical>.swiper-pagination-progressbar.swiper-pagination-progressbar-opposite {
+    width: 100%;
+    height: 0;
+    left: 0;
+    top: 0;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    position: absolute;
+    top: 50%;
+    width: 27px;
+    height: 44px;
+    margin-top: -22px;
+    z-index: 10;
+    cursor: pointer;
+    -webkit-background-size: 27px 44px;
+    background-size: 27px 44px;
+    background: no-repeat 50%;
+    color: #fff;
+    transition: .5s;
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+    font-size: 30px;
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+    padding: 30px;
+    background: #fff;
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover,
+.airFlue_ds_content_inner h1 span,
+.airFlue_ds_content_inner h2 span,
+.airFlue_ds_content_inner h3 span {
+    color: #0d1f38;
+}
+
+/* swiper area 2 css */
+.airFlue_swiper_area2 .airFlue_sw_text_area {
+    text-align: center !important;
+}
+
+.airFlue_swiper_area2 .text-left .airFlue_swiper_content h2 {
+    width: 100%;
+}
+
+.airFlue_swiper_area2 .airFlue_sw_text_area {
+    margin: auto;
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh - 50px);
+}
+
+.airFlue_swiper_area2 .airFlue_swiper_content p {
+    width: 100%;
+}
+
+.airFlue_swiper_area2 .airFlue_swiper_content h2,
+.airFlue_swiper_area2 .airFlue_swiper_content h3 {
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 1.4;
+}
+
+.airFlue_swiper_area2 .airFlue_swiper_content h2 {
+    margin: 21px auto 10px 0;
+}
+
+.airFlue_swiper_area2 .slider_btn {
+    margin-top: 48px;
+}
+
+.airFlue_swiper_area2 .airFlue_swiper_content {
+    top: 30%;
+    background-color: rgba(13, 31, 56, 0.5);
+    border-radius: 18px;
+    padding: 30px;
+}
+
+.airFlue_swiper_area2 .airFlue_swiper_height {
+    height: auto;
+}
+
+.airFlue_swiper_area2 .airFlue_shape_item_inner {
+    z-index: 9;
+    top: 620px;
+    right: 31%;
+}
+
+.airFlue_swiper_area2 .airFlue_shape_box,
+.airFlue_swiper_area2 .airFlue_shape_item img {
+    width: 60%;
+}
+
+/* ===== 4. Feature Area CSS ===== */
+.dron_feature_area {
+    padding: 90px 0 90px;
+}
+
+.dron_feature_area .airFlue_section_title {
+    margin-bottom: 35px;
+}
+
+.sub-item {
+    position: relative;
+    padding: 20px;
+    -webkit-transition: .5s;
+    transition: .5s;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.sub-item:hover img {
+    transform: rotate(45deg);
+    transition: all 0.5s ease-in-out;
+}
+
+.sub-item img {
+    transition: all 0.5s ease-in-out;
+}
+
+.all_feature_color {
+    transition: .5s;
+}
+
+.feature_active .slick-slide img {
+    display: initial;
+}
+
+.sub-item h3 {
+    margin: 28px 0 15px;
+    font-size: 18px;
+}
+
+.feature_btn a {
+    -webkit-transition: .5s;
+    transition: .5s;
+    display: inline-block;
+    padding: 10px 0;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #0d1f38;
+}
+
+.all_feature_color:hover,
+.feature_inner_box:hover {
+    box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, .05);
+    background-color: #ffffff;
+}
+
+.feature_bottom_bg .single_image_area {
+    text-align: center;
+    padding: 84px 0 25px;
+}
+
+.dron2_feature_area {
+    padding: 0 0 95px;
+}
+
+.dron3_feature_area {
+    padding: 90px 0 80px;
+}
+
+/* ===== 5. About Area CSS ===== */
+.dron_about_area {
+    background: #fafafa;
+}
+
+.about_content_inner {
+    padding: 100px 287px 0 30px;
+}
+
+.about_content_inner .airFlue_section_title {
+    margin-bottom: 25px;
+}
+
+.about_content_inner .airFlue_section_title_inner h1 {
+    color: #0d1f38;
+    font-size: 26px;
+    font-weight: 700;
+    margin: 25px 0 13px;
+}
+
+.about_content_inner .airFlue_section_title_inner p {
+    width: 87%;
+    padding: 0;
+    margin-top: 0;
+}
+
+.about_img_inner img {
+    height: 80vh;
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    border-radius: 18px;
+}
+
+.airFlue_widget_list i {
+    color: #0d1f38;
+}
+
+span.airFlue_list_icon {
+    margin: 0 10px 12px 0;
+}
+
+span.airFlue_list_icon {
+    margin: 0 5px 12px 0;
+    display: inline-block;
+}
+
+.about_bottom_service {
+    margin: 10px 0 0;
+    border-style: solid;
+    border-width: 1px 0 0;
+    border-color: #f1f1f1;
+    padding: 46px 0 0;
+    margin-top: 30px;
+}
+
+.about_bottom_service .all_icon_color i,
+.about_bottom_service .em-service2.sleft .em-service-icon {
+    margin: -4px 20px 0 0;
+}
+
+.about_bottom_service .all_icon_color i {
+    font-size: 30px;
+    width: 77px;
+    height: 77px;
+    line-height: 77px;
+    background-image: linear-gradient(90deg, #0c1d60 0%, #0d1f38 100%);
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    color: #fff;
+}
+
+.em-service2 .em-service-inner {
+    overflow: hidden;
+    width: 100%;
+}
+
+.all_color_service h3,
+.all_color_service h3 a {
+    color: #0c1d60;
+    font-size: 18px;
+}
+
+.em-service-title h3 {
+    padding: 0;
+    margin-bottom: 8px;
+}
+
+.about_bottom_service .all_color_service p {
+    font-size: 26px;
+    color: #232323;
+}
+
+/* ===== About Area CSS ===== */
+.dron2_about_area {
+    padding: 0 0 100px;
+}
+
+.dron2_about_area .about_content_inner {
+    padding: 0;
+}
+
+.dron2_about_area .about_content_inner .airFlue_section_title_inner p {
+    width: 100%;
+    padding: 0 0 10px 0;
+    margin-top: 22px;
+}
+
+.dron2_about_area .all_color_service h3,
+.dron2_about_area .all_color_service h3 a {
+    color: #0c1d60;
+    font-size: 23px;
+}
+
+.dron2_about_area .em-service2 .em-service-icon i {
+    background: #fff;
+    color: #0d1f38;
+    box-shadow: 0px 0px 30px 0px rgb(0 0 0 / 6%);
+    margin-right: 22px;
+    margin-top: 10px;
+}
+
+.dron2_about_area .em-service2.sleft.all_color_service {
+    margin-bottom: 20px;
+}
+
+.dron2_about_area .airFlue_btn {
+    margin-top: 22px;
+}
+
+.about_page_about_area {
+    padding: 100px 0 100px;
+}
+
+/* ===== 6. Service Area CSS ===== */
+.airflue_widget_list li {
+    padding: 4px 16px;
+    font-weight: 600;
+    font-size: 16px;
+    background-color: #f8f9fa;
+    border-radius: 20px;
+    margin: 10px 0;
+}
+
+.airflue_list_icon .icofont {
+    color: #092fc1;
+}
+
+.photography_img_inner img {
+    border-radius: 18px;
+}
+
+.dron_service_area {
+    padding: 112px 0 62px;
+}
+
+.dron_service_area .airFlue_section_title {
+    margin-bottom: 70px;
+}
+
+.em-service2.sright {
+    text-align: right;
+}
+
+.Advantage .airFlue_s_flex {
+    flex-direction: column;
+}
+
+.airFlue_s_flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.sright .airFlue_s_flex {
+    -ms-flex-flow: row-reverse;
+    flex-flow: row-reverse;
+}
+
+.em-service2.sright .em-service-icon {
+    margin-left: 25px;
+    margin-top: 5px;
+}
+
+.em-service2 .em-service-icon i {
+    display: inline-block;
+    height: 80px;
+    width: 80px;
+    text-align: center;
+    border-radius: 50%;
+    line-height: 80px;
+    font-size: 25px;
+    -webkit-transition: all .5s ease 0s;
+    transition: all .5s ease 0s;
+    background: #0d1f38;
+    color: #fff;
+    transition: .5s;
+}
+
+.em-service2 .em-service-inner {
+    overflow: hidden;
+    width: 100%;
+    height: 200px;
+}
+
+.em-service-title h3 {
+    padding: 10px 0;
+    margin: 0;
+    margin-bottom: 8px;
+    font-size: 23px;
+}
+
+.service_airFlue_inner .em-service2.sright {
+    text-align: left;
+    margin-bottom: 88px;
+}
+
+.service_airFlue_inner .sright .airFlue_s_flex {
+    flex-flow: inherit;
+}
+
+.service_airFlue_inner .em-service2.sright .em-service-icon {
+    margin-left: 0;
+    margin-top: 5px;
+    margin-right: 25px;
+}
+
+.service_first_item {
+    margin: 0 -40px 85px 0px;
+}
+
+.service_scond_item {
+    margin: 0 -40px 88px 0px;
+}
+
+.service_middle_img img {
+    width: 96%;
+    margin-left: -15px;
+}
+
+.service_middle_img .single_video {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin: auto 30px;
+}
+
+.service_middle_img .single_video .bg-video {
+    border-radius: 200px;
+}
+
+.service_airFlue_inner {
+    margin-left: -42px;
+    margin-right: -82px;
+}
+
+/* ===== Service Area CSS ===== */
+.dron2_service_area {
+    background: #f6f7f9;
+    padding: 92px 0 80px;
+}
+
+.dron2_service_area .airFlue_section_title {
+    margin-bottom: 70px;
+}
+
+.dron2_service_area .all_color_service {
+    padding: 40px 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    transition: .5s;
+    margin-bottom: 20px;
+    height: 400px;
+}
+
+.dron2_service_area .em-service2 .em-service-icon i {
+    transition: .5s;
+    border-style: solid;
+    border-width: 2px;
+    background-image: linear-gradient(90deg, #0c1d60 0%, #0d1f38 100%);
+}
+
+.dron2_service_area .all_icon_color i,
+.dron2_service_area .em-service2.sleft .em-service-icon {
+    margin: 0 10px 0 0;
+    transition: .5s;
+}
+
+.dron2_service_area .all_color_service:hover {
+    background-color: transparent;
+    background-image: linear-gradient(90deg, #0c1d60 0%, #0d1f38 100%);
+    padding: 40px 10px;
+    border-radius: 5px;
+}
+
+.dron2_service_area .all_color_service p {
+    transition: .5s;
+}
+
+.dron2_service_area .all_color_service:hover h3,
+.dron2_service_area .all_color_service:hover h3 a,
+.dron2_service_area .all_color_service:hover p,
+.dron2_service_area .all_color_service:hover i {
+    color: #fff;
+}
+
+.dron2_service_area .all_color_service:hover i {
+    border-style: solid;
+    border-width: 2px;
+    border-color: #fff;
+}
+
+/* ===== 7. Video Area CSS ===== */
+.video-item a {
+    position: relative;
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    font-size: 28px;
+    border-radius: 100%;
+    background-color: #fff;
+    color: #fff;
+    line-height: 100px;
+    animation: airFlue-shadow 1s linear infinite;
+}
+
+.video_inner {
+    background-image: url(../../images/dron/video-bg.jpg);
+    background-position: center center;
+    background-size: cover;
+    padding: 290px 0;
+}
+
+.airFlue_all_color_v i {
+    color: #0d1f38;
+}
+
+.tx_svd_icon {
+    animation: airFlue-shadow 1s linear infinite;
+}
+
+.video-item i {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.airFlue_shape_item_inner {
+    z-index: 9;
+    top: 106px;
+    right: -485px;
+}
+
+.airFlue_shape_box,
+.airFlue_shape_item img {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    width: 400px !important;
+    transform-style: preserve-3d;
+    animation:
+        droneLR 10s ease-in-out infinite alternate,
+        droneUD 3s ease-in-out infinite,
+        droneZ 6s ease-in-out infinite alternate,
+        droneRotate 4s ease-in-out infinite;
+    filter: drop-shadow(0 25px 20px rgba(0, 0, 0, 0.35));
+}
+
+/* LEFT ↔ RIGHT (AUTO REVERSE) */
+@keyframes droneLR {
+    0% {
+        transform: translate(-60%, -50%);
+    }
+
+    100% {
+        transform: translate(-10%, -50%);
+    }
+}
+
+/* UP ↕ DOWN FLOATING */
+@keyframes droneUD {
+    0% {
+        margin-top: -20px;
+    }
+
+    50% {
+        margin-top: 20px;
+    }
+
+    100% {
+        margin-top: -20px;
+    }
+}
+
+/* FORWARD ↔ BACK (ZOOM IN / OUT) */
+@keyframes droneZ {
+    0% {
+        scale: 0.85;
+    }
+
+    100% {
+        scale: 1.15;
+    }
+}
+
+/* REALISTIC BALANCE ROTATION */
+@keyframes droneRotate {
+    0% {
+        rotate: -3deg;
+    }
+
+    50% {
+        rotate: 3deg;
+    }
+
+    100% {
+        rotate: -3deg;
+    }
+}
+
+@keyframes airFlue-shadow {
+    0% {
+        box-shadow: 0 0 0 0 rgba(255, 255, 255, .3),
+            0 0 0 10px rgba(255, 255, 255, .3),
+            0 0 0 20px rgba(255, 255, 255, .3)
+    }
+
+    100% {
+        box-shadow: 0 0 0 10px rgba(255, 255, 255, .3),
+            0 0 0 20px rgba(255, 255, 255, .3),
+            0 0 0 30px rgba(255, 255, 255, 0)
+    }
+}
+
+/* ===== Video Area CSS ===== */
+.dron2_video_area {
+    margin-top: 0;
+    margin-bottom: -280px;
+    z-index: 9;
+}
+
+.dron2_video_area .airFlue_all_color_v {
+    /* background-image: url(../../images/dron/video-bg2.png); */
+    background-position: center center;
+    background-size: contain;
+    padding: 100px 0 100px;
+    background-repeat: no-repeat;
+    z-index: 999;
+    position: relative;
+}
+
+.dron2_video_area .video_inner {
+    background-image: none;
+    padding: 0;
+}
+
+/* ===== 8. Team Area CSS ===== */
+.dron_team_area {
+    padding: 92px 0 80px;
+}
+
+.dron_team_area .airFlue_section_title {
+    margin-bottom: 50px;
+}
+
+.team-part {
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 5px 4px 0 rgba(0, 0, 0, .05);
+    transition: .5s;
+    margin-bottom: 20px;
+}
+
+.airFlue_team_section {
+    position: relative;
+    text-align: center;
+}
+
+.airFlue_team_section:before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    -webkit-transition: .5s;
+    transition: .5s;
+}
+
+.airFlue_team_section:before {
+    background: #0d1f386b;
+}
+
+.team_overlay_icon a {
+    position: absolute;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+    font-size: 22px;
+    opacity: 0;
+    width: 52px;
+    height: 52px;
+    line-height: 52px;
+    border-radius: 50%;
+}
+
+.team_overlay_icon a {
+    background: #0d1f38;
+    color: #fff;
+}
+
+.airFlue_team_content {
+    padding: 23px 5px 23px;
+}
+
+.all_color_team h5 {
+    margin: 0 0 10px;
+}
+
+.all_color_team span {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.airFlue_team_content h5 a:hover,
+.airFlue_team_content h5:hover,
+.airFlue_team_content span {
+    color: #0d1f38;
+}
+
+.airFlue_team_section:hover:before {
+    opacity: 1;
+}
+
+.airFlue_team_section:hover .team_overlay_icon a {
+    opacity: 1;
+}
+
+.dron2_team_area {
+    background-image: url(../../images/dron/team-bg.png);
+    background-position: center center;
+    background-size: cover;
+    padding: 80px 0 80px;
+}
+
+/* ===== Team Area CSS ===== */
+.dron_team_area2 {
+    background: #f9f9f9;
+    padding: 80px 0 80px;
+}
+
+.dron_team_area2 .airFlue_section_title_inner p {
+    width: 75%;
+    margin: 0 auto;
+}
+
+.dron_team_area2 .airFlue_section_title {
+    margin-bottom: 32px;
+}
+
+.dron_team_area2 .team-part {
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 5px 4px 0 rgb(0 0 0 / 5%);
+    background-color: #fff;
+}
+
+.dron_team_area2 .airFlue_team_content h5 {
+    margin: 0;
+}
+
+.dron_team_area2 .all_color_team span {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.dron_team_area2 .airFlue_team_content {
+    padding: 23px 5px 40px;
+}
+
+.team_o_icons {
+    margin-top: 15px;
+    padding-top: 17px;
+    padding-bottom: 10px;
+    position: relative;
+}
+
+.team_o_icons:before {
+    position: absolute;
+    content: "";
+    top: 0;
+    height: 1px;
+    width: 25%;
+    margin: auto;
+    left: 0;
+    right: 0;
+    -webkit-transition: .5s;
+    transition: .5s;
+}
+
+.team_o_icons:before {
+    background: #ddd;
+}
+
+.team_o_icons ul li {
+    list-style: none;
+    display: inline-block;
+}
+
+.team_o_icons ul li a {
+    display: block;
+    width: 35px;
+    height: 35px;
+    line-height: 33px;
+    border-radius: 5px;
+    text-align: center;
+    -webkit-transition: .5s;
+    transition: .5s;
+    margin: 0 2px;
+    font-size: 15px;
+}
+
+.team_o_icons ul li a {
+    border: 1px solid #0d1f381c;
+}
+
+.team_o_icons ul li a {
+    background: #0d1f3833;
+}
+
+.team_o_icons ul li a {
+    color: #0d1f38;
+}
+
+.all_color_team:hover .team_o_icons:before {
+    width: 100%;
+}
+
+.all_color_team:hover .team_o_icons:before {
+    background: #0d1f38;
+}
+
+.team_o_icons ul li a:hover {
+    border-color: #0d1f38;
+}
+
+.team_o_icons ul li a:hover {
+    background: #0d1f38;
+}
+
+.team_bottom_icon a,
+.team_o_icons ul li a:hover,
+.team_top_icon ul li a {
+    color: #fff;
+}
+
+/* ===== Team Area CSS ===== */
+.dron_team_area3 {
+    background: 0 0;
+    padding: 85px 0 80px;
+}
+
+.dron_team_area3 .all_color_team {
+    margin-bottom: 20px;
+}
+
+.dron_team_area3 .post_team_content {
+    padding: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.dron_team_area3 .post_team_icon_9 {
+    padding: 10px 10px 26px;
+    margin-right: 20px;
+    background: #0d1f38;
+}
+
+.post_team_icon_8 ul li a:hover,
+.post_team_icon_9 ul li a {
+    color: #fff;
+}
+
+.post_team_icon_9 ul li a:hover {
+    color: #272727;
+}
+
+.dron_team_area3 .post_team_content {
+    box-shadow: 0 5px 20px 0 #00000014;
+    transition: .5s;
+    background: #fff;
+}
+
+.dron_team_area3 .all_color_team h5 {
+    margin: 0;
+}
+
+/* ===== 9. Process Area CSS ===== */
+.dron_process_area {
+    background-image: url(../../images/dron/process-bg.jpg);
+    background-position: center center;
+    background-size: cover;
+    padding: 95px 0 80px;
+    position: relative;
+    z-index: 1;
+}
+
+.dron_process_area .airFlue_section_title_inner h2 {
+    color: #fff;
+}
+
+.dron_process_area .airFlue_section_title_inner h3 {
+    color: #fff;
+}
+
+.dron_process_area .airFlue_section_title {
+    margin-bottom: 55px;
+}
+
+.dron_process_area::before {
+    content: "";
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    background-color: transparent;
+    background-image: linear-gradient(180deg, #0c1d60 0%, #0d1f38 100%);
+    opacity: .91;
+    z-index: -1;
+}
+
+.dron_process_area .sub-border-2 {
+    padding: 40px 40px 0;
+    background-color: #fff;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    height: 300px;
+}
+
+.dron_process_area .all_feature_color span,
+.dron_process_area .all_feature_color h2 {
+    color: #0C1D6042;
+    top: -13px;
+    right: -9px;
+}
+
+.dron_process_area .sub-item span {
+    left: auto;
+    right: -3%;
+    z-index: 999;
+    -webkit-transition: .5s;
+    transition: .5s;
+}
+
+.dron_process_area .sub-item span {
+    position: absolute;
+    font-size: 50px;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    font-weight: 700;
+    line-height: 1;
+}
+
+.dron_process_area .sub-item i,
+.dron_process_area .sub-item i {
+    font-size: 50px;
+    height: auto;
+    width: auto;
+    border-radius: initial;
+    line-height: normal;
+    background: 0 0;
+    border: none;
+    text-align: center;
+    color: #0d1f38;
+}
+
+.dron_process_area .all_feature_color h3 {
+    color: #0d1f38;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.dron_process_area .all_feature_color p {
+    font-size: 14px;
+}
+
+.dron_process_area .feature_btn a {
+    -webkit-transition: .5s;
+    transition: .5s;
+    display: inline-block;
+    padding: 9px 30px;
+    border-radius: 5px;
+    font-size: 18px;
+    border-radius: 5px;
+    font-size: 18px;
+    color: #0d1f38;
+}
+
+.dron_process_area .all_feature_color:hover span,
+.dron_process_area .all_feature_color:hover h2 {
+    color: #0d1f38;
+}
+
+.sub-border-2:hover .sub-item span {
+    font-size: 60px;
+}
+
+/* ===== Process Area CSS ===== */
+.dron2_process_area {
+    padding: 370px 0 80px;
+    background-image: none;
+    position: relative;
+}
+
+.dron2_process_area::before {
+    content: "";
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    opacity: .91;
+    background: #f6f7f9;
+}
+
+.dron2_process_area .airFlue_section_title_inner h2 {
+    color: #0d1f38;
+}
+
+.dron2_process_area .airFlue_section_title_inner h3 {
+    color: #0c1d60;
+}
+
+.service_page_process_area {
+    padding: 382px 0 80px;
+    background: #f6f7f9;
+    background-image: none;
+}
+
+.service_page_process_area::before {
+    background-image: none;
+}
+
+.service_page_process_area .airFlue_section_title_inner h2 {
+    color: #0d1f38;
+}
+
+.service_page_process_area .airFlue_section_title_inner h3 {
+    color: #0c1d60;
+}
+
+
+/* ===== 14. Call Action Area CSS ===== */
+.call_action_area {
+    background-color: transparent;
+    background-image: linear-gradient(90deg, #0c1d60 0%, #0d1f38 100%);
+    padding: 60px 0;
+}
+
+.air_content h2,
+.air_content h3 {
+    font-size: 40px;
+    padding: 0;
+    margin: 0;
+    color: #fff;
+}
+
+.cal_to_toggole {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.air_content.col_content_width_100 {
+    width: 100%;
+}
+
+.air_button.no_margin {
+    margin-top: 0;
+    width: 60%;
+    text-align: right;
+}
+
+.air_button a {
+    padding: 18px 35px;
+    display: inline-block;
+    font-size: 18px;
+    transition: 1s;
+    margin-right: 15px;
+    font-weight: 600;
+    border-radius: 5px;
+    color: #0c1d60;
+    background: #fff;
+}
+
+.air_button a:hover {
+    color: #fff;
+    background-color: #0d1f38;
+}
+
+/* ===== 15. Footer Area CSS ===== */
+.airFluefm_area {
+    position: relative;
+}
+
+.airFluefm_area:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.airFluefm_area:before {
+    background-color: rgba(0, 80, 159, 0);
+}
+
+.footer-middle {
+    background-position: center center;
+    background-image: url(../../images/dron/footer-bg.png);
+    background-size: cover;
+}
+
+.footer-middle {
+    padding: 65px 0 73px;
+}
+
+.footer-middle .widget ul li,
+.footer-middle .widget ul li a,
+.footer-middle .widget ul li::before,
+.footer-middle .tagcloud a,
+.footer-middle caption,
+.footer-middle table,
+.footer-middle table td a,
+.footer-middle cite,
+.footer-middle .rssSummary,
+.footer-middle span.rss-date,
+.footer-middle span.comment-author-link,
+.footer-middle .textwidget p,
+.footer-middle .widget .sdroneen-reader-text,
+mc4wp-form-fields p,
+.mc4wp-form-fields,
+.footer-m-address p,
+.footer-m-address,
+.footer-widget.address,
+.footer-widget.address p,
+.mc4wp-form-fields p,
+.air-desdroniption-area p,
+.air-desdroniption-area .phone a,
+.air-desdroniption-area .social-icons a,
+.recent-review-content h3,
+.recent-review-content h3 a,
+.recent-review-content p,
+.footer-middle .air-desdroniption-area p,
+.footer-middle .recent-post-text h4 a,
+.footer-middle .recent-post-text .rcomment,
+.airFlue_sub_table span {
+    color: #ffffff;
+    font-size: 14px;
+}
+
+.footer-middle .widget h2 {
+    color: #ffffff;
+}
+
+.footer-middle .widget h2 {
+    margin-bottom: 30px;
+    margin-top: 28px;
+    position: relative;
+}
+
+.footer-middle .single-widget-item h2 {
+    color: #ffffff;
+    margin-bottom: 33px;
+    margin-top: 28px;
+}
+
+.footer-middle .recent-post-text h4 a {
+    font-weight: 500;
+    font-size: 14px;
+    margin-bottom: -10px;
+}
+
+.footer-middle .recent-post-text>h4 {
+    margin-bottom: 0;
+    font-weight: 400;
+    line-height: .7;
+    margin-top: 10px;
+}
+
+.recent-post-image {
+    float: left;
+    margin-right: 15px;
+    margin-top: 0px;
+}
+
+.recent-post-item {
+    clear: both;
+    margin-bottom: 5px;
+}
+
+.footer-middle .recent-post-text>h4 a:hover {
+    color: #0d1f38;
+}
+
+.footer-middle .recent-post-text .rcomment {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.footer-middle .widget ul li {
+    margin-bottom: 10px;
+}
+
+.footer-middle .widget ul li a:hover,
+.footer-middle .widget ul li:hover:before {
+    color: #0d1f38;
+}
+
+.air-desdroniption-area a img {
+    margin: 26px 0;
+    width: 150px;
+}
+
+.air-desdroniption-area .social-icons a {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 4px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    background: #0d1f68;
+}
+
+.air-desdroniption-area .social-icons a:hover {
+    background: #0d1f38;
+    border-color: #0d1f38;
+}
+
+.footer-sociala-icon {
+    clear: both;
+    float: left;
+    font-size: 18px;
+    margin-right: 12px;
+}
+
+.footer-widget.address p {
+    margin-bottom: 6px;
+}
+
+.twr_footer_contact input {
+    background: 0 0;
+    color: #fff;
+    border: 1px solid #fff;
+    height: 60px;
+    width: 100%;
+    padding-left: 30px;
+    color: #fff;
+    border-radius: 4px;
+}
+
+.twr_footer_contact input::placeholder {
+    color: #fff;
+}
+
+.twr_footer_contact button {
+    padding: 15px 30px;
+    margin-top: 10px;
+    outline: 0;
+    border: none;
+    background: #0d1f38;
+    color: #fff;
+}
+
+/* footer bottom area css */
+.footer-bottom {
+    padding: 26px 0 24px;
+    position: relative;
+    background-color: #000c3b;
+}
+
+.copy-right-text p {
+    margin: 0;
+    padding: 0;
+}
+
+.copy-right-text p,
+.footer-menu ul li a {
+    color: #ffffff;
+}
+
+.footer-menu ul li {
+    display: inline-block;
+}
+
+.footer-menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.footer-menu ul li a {
+    padding: 0 10px;
+    display: block;
+}
+
+/* .copy-right-text a,
+.footer-menu ul li a:hover {
+    color: #000000;
+} */
+
+/* sdronoll up css */
+#scrollUp {
+    bottom: 30px;
+    font-size: 30px;
+    height: 40px;
+    line-height: 40px;
+    right: 100px;
+    text-align: center;
+    border-radius: 5px;
+    width: 40px;
+    background: #0d1f38;
+}
+
+#scrollUp i {
+    color: #fff;
+}
+
+/* slick slide css */
+.slick-dots li button {
+    font-size: 0;
+    width: 42px;
+    height: 12px;
+    border: 0 solid #0d1f38;
+    margin: 0 5px;
+    cursor: pointer;
+    border-radius: 50px;
+    padding: 0;
+    -webkit-transition: .5s;
+    transition: .5s;
+    outline: 0;
+    background: #0d1f385c;
+}
+
+.slick-dots li.slick-active button {
+    background-image: linear-gradient(90deg, #0c1d60 0%, #0d1f38 100%);
+}
+
+.slick-dots li {
+    display: inline-block;
+}
+
+.slick-dots {
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    bottom: -49px;
+    display: inline-block;
+    z-index: 11;
+    text-align: center;
+}
+
+/* slick prev slick next css */
+/*======== slick ========*/
+.slick-prev,
+.slick-next {
+    font-size: 0;
+    position: absolute;
+    display: block;
+    padding: 0;
+    cursor: pointer;
+    color: #fff;
+    outline: none;
+    background: #ff3d0;
+    z-index: 9;
+    opacity: 0;
+    border-radius: 0px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+    top: 50%;
+    transform: translate(0px, -50%);
+    transition: .5s;
+    border: 0px solid #17161a;
+    background: #0d1f38;
+}
+
+.slick-next:focus,
+.slick-next:hover,
+.slick-prev:focus,
+.slick-prev:hover {
+    background: #0d1f68;
+}
+
+.slick-next:before,
+.slick-prev:before {
+    color: #fff;
+    font-size: 40px;
+    -webkit-transition: all .3s ease 0s;
+    transition: all .3s ease 0s;
+    content: "\ea93";
+    font-family: IcoFont !important;
+    line-height: inherit;
+    opacity: 1;
+}
+
+.slick-next:before {
+    content: "\ea94";
+    font-family: IcoFont !important;
+}
+
+button:focus {
+    outline: 1px dotted;
+    outline: none;
+}
+
+.slick-prev {
+    left: -65px;
+}
+
+.slick-next {
+    right: -65px;
+}
+
+.simages_id11:hover .slick-prev,
+.simages_id11:hover .slick-next {
+    opacity: 1;
+}
+
+.airFlue_ds_content_area .slick-prev,
+.airFlue_ds_content_area .slick-next {
+    top: 48%;
+    opacity: 1;
+}
+
+.airFlue_ds_content_area:hover .slick-prev,
+.airFlue_ds_content_area:hover .slick-next {
+    opacity: 1;
+}
+
+.dron_feature_area:hover .slick-prev,
+.dron_feature_area:hover .slick-next {
+    opacity: 1;
+}
+
+.dron_blog_area:hover .slick-prev,
+.dron_blog_area:hover .slick-next {
+    opacity: 1;
+}
+
+/* ===== 16. Project Area CSS ===== */
+.project_bg_area {
+    background-image: url(../../images/dron/project-bg.png);
+    padding: 95px 0 305px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.project_bg_area .airFlue_section_title_inner h2 {
+    color: #fff;
+}
+
+.project_bg_area .airFlue_section_title_inner h3 {
+    color: #fff;
+}
+
+.dron_project_area {
+    padding: 0 210px 90px 160px;
+    margin-top: -315px;
+}
+
+.airFlue_single_pslide {
+    position: relative;
+    overflow: hidden;
+}
+
+.airFlue_pslide_image {
+    overflow: hidden;
+    position: relative;
+}
+
+.airFlue_pslide_image:before {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    -webkit-transition: .5s;
+    transition: .5s;
+    z-index: 1;
+}
+
+.airFlue_pslide_image:before {
+    background-color: #0d1f38;
+    opacity: .92;
+}
+
+.airFlue_pslide_image img {
+    margin-right: auto;
+    margin-left: auto;
+    -webkit-transition: .5s;
+    transition: .5s;
+    width: 100%;
+}
+
+.airFlue_pslide .airFlue_pslide_custom {
+    bottom: auto;
+    top: 30px;
+    right: auto;
+    left: 30px;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+}
+
+.airFlue_pslide_custom {
+    position: absolute;
+    bottom: -125px;
+    right: -15px;
+    z-index: 9;
+    -webkit-transition: .5s;
+    transition: .5s;
+}
+
+.airFlue_pslide .airFlue_pslide_custom a span {
+    width: 80px;
+    height: 80px;
+    line-height: 80px;
+    border-radius: 5px;
+    font-size: 30px;
+    background: #fff;
+    color: #0d1f38;
+    display: inline-block;
+    text-align: center;
+    transition: .5s;
+}
+
+.ps1 .airFlue_content_pslide_text {
+    position: absolute;
+    bottom: -100px;
+    left: 30px;
+    right: 30px;
+    -webkit-transition: .5s;
+    transition: .5s;
+    opacity: 0;
+    z-index: 2;
+    text-align: left;
+}
+
+.ps1 .airFlue_content_pslide_text h3 {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.airFlue_content_pslide_text h3 {
+    margin-bottom: 0;
+}
+
+.airFlue_content_pslide_text a {
+    display: inline-block;
+}
+
+.ps1 .airFlue_content_pslide_text a,
+.ps1 .airFlue_content_pslide_text p {
+    color: #fff;
+}
+
+.ps1 .airFlue_content_pslide_text a:hover {
+    color: #0d1f38;
+}
+
+.airFlue_single_pslide:hover .airFlue_pslide_image img,
+.airFlue_single_pslide:hover .airFlue_pslide_image:before {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
+.airFlue_pslide .airFlue_single_pslide:hover .airFlue_pslide_custom {
+    bottom: auto;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+
+.ps1 .airFlue_single_pslide:hover .airFlue_content_pslide_text {
+    opacity: 1;
+    bottom: 30px;
+}
+
+.airFlue_pslide_custom a span:hover {
+    background: #0d1f68;
+}
+
+.dron_project_area .airFlue_pslide_custom a {
+    left: 0;
+}
+
+/* ===== Project Area CSS ===== */
+.choose_page_project_area {
+    padding: 0 210px 142px 160px;
+}
+
+/* ===== 17. Choose Area CSS ===== */
+.dron2_choose_area {
+    padding: 75px 0 75px;
+}
+
+.choose_content_inner {
+    margin-bottom: 20px;
+}
+
+.choose_content_inner .airFlue_section_title {
+    margin-bottom: 30px;
+}
+
+.choose_content_inner .em-service2.sleft.all_color_service {
+    margin-bottom: 20px;
+}
+
+.choose_content_inner .all_color_service h3,
+.choose_content_inner .all_color_service h3 a {
+    color: #0c1d60;
+    font-size: 23px;
+}
+
+.choose_content_inner .em-service2 .em-service-icon i {
+    background: #fff;
+    color: #0d1f38;
+    box-shadow: 0px 0px 30px 0px rgb(0 0 0 / 6%);
+    margin-right: 22px;
+    margin-top: 10px;
+}
+
+.choose_content_inner .airFlue_section_title_inner p {
+    padding: 15px 0px 0px 0px;
+}
+
+.choose_content_inner .airFlue_btn {
+    margin-top: 24px;
+}
+
+
+/* ===== 22. Faq Area CSS ===== */
+.dron_faq_area {
+    padding: 100px 0 60px;
+}
+
+.faq_img_inner .single_image_area {
+    text-align: center;
+    margin-left: 22px;
+    margin-bottom: 20px;
+}
+
+.accordion_area {
+    margin-right: 5px;
+}
+
+.dron_faq_area .airFlue_section_title_inner p {
+    margin-top: 0;
+    padding: 30px 0 0 0;
+}
+
+.dron_faq_area .airFlue_section_title {
+    margin-bottom: 35px;
+}
+
+.faq_content_inner {
+    margin-left: 40px;
+}
+
+.accordion_area .card-2 {
+    border: none;
+    margin-bottom: 20px;
+    box-shadow: 0px 0px 30px 0px rgb(0 0 0 / 9%);
+}
+
+.accordion_area .card-header.airFlue_ac_card {
+    background: 0 0 !important;
+    padding: 0;
+    border-bottom: 0;
+    text-align: left;
+}
+
+.airFlue_ac_style {
+    font-size: 17px;
+    font-weight: 600;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    align-items: center;
+    padding: 19px 20px 19px 30px;
+    transition: .5s;
+}
+
+.airFlue_ac_style {
+    color: #fff;
+    background: #3d59e8;
+}
+
+.airFlue_ac_style:before {
+    position: absolute;
+    content: '\ea99';
+    right: 30px;
+    font-family: IcoFont !important;
+    font-weight: 400;
+}
+
+.active .airFlue_ac_style:before {
+    content: '\eaa1';
+}
+
+.airFlue_ac_card i {
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+.accordion_area .card-2 p {
+    padding: 10px 15px 0;
+}
+
+.airFlue_ac_style:hover {
+    background-color: #fe688b;
+}
+
+.active .airFlue_ac_style {
+    background-color: #7a0fff;
+}
+
+.dron_faq_area .active .airFlue_ac_style,
+.dron_faq_area .airFlue_ac_style:focus,
+.dron_faq_area .airFlue_ac_style:hover {
+    color: #fff;
+}
+
+/* ===== Faq Area CSS ===== */
+.faq_area1.single_service_faq1 {
+    background: #F1F1F126;
+    padding: 0 0 80px;
+}
+
+.faq_area1 .airFlue_section_title_inner p {
+    width: 75%;
+    padding: 10px 0px 0px 0px;
+    margin-top: 10px;
+    margin: 0 auto;
+}
+
+.faq_area1 .airFlue_section_title {
+    margin-bottom: 57px;
+}
+
+.accordion_area_02 .airFlue_ac_style {
+    padding: 10px 20px;
+}
+
+.accordion_area_02 .accordion_02_shadow {
+    border: none;
+    box-shadow: 0px 0px 20px 0px #dddddd80;
+    background: none;
+}
+
+.accordion_area_02 .card-header.airFlue_ac_card a:hover {
+    color: #232323;
+}
+
+.border_bottom_0 {
+    border-bottom: none;
+}
+
+.writ_ac_style_02 {
+    margin-left: 25px;
+    font-size: 17px;
+    font-weight: 600;
+    display: block;
+    background: none !important;
+    color: #232323;
+}
+
+.writ_ac_style_02:before {
+    position: absolute;
+    content: '\f067';
+    left: 20px;
+    margin-right: 10px;
+    font-family: fontawesome !important;
+    font-weight: 200;
+}
+
+.active .writ_ac_style_02:before {
+    content: '\f068';
+}
+
+.card-header.airFlue_ac_card.border_bottom_0 {
+    background: #fff;
+    padding: 0px 10px;
+}
+
+.content_style p,
+.conent_style p {
+    padding-left: 18px;
+}
+
+.card.card-2.accordion_02_shadow {
+    border: 0 !important;
+    margin-bottom: 20px;
+    box-shadow: 1px 1px 7px -5px rgb(0 0 0 / 75%);
+}
+
+.faq_area2 .airFlue_ac_style2 {
+    padding-left: 30px;
+    font-size: 20px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    padding: 11px 15px;
+    transition: .5s;
+    padding: 12px 20px 12px 20px;
+    color: #232323;
+}
+
+.writ_ac_style_02:before {
+    font-weight: 200;
+    font-size: 17px;
+    color: #3a4268;
+    margin-top: 2px;
+}
+
+.faq_area2 .single_image img {
+    margin-bottom: 20px;
+    margin-left: 50px;
+}
+
+.faq_area2 .active .airFlue_ac_style {
+    color: #232323;
+    background-color: #A4282800;
+}
+
+.faq_area2 .card-header.airFlue_ac_card a:hover {
+    color: #232323;
+}
+
+/* ===== 16. Contact Area CSS ===== */
+.dron2_contact_area {
+    background-image: url(../../images/dron/contact-bg.jpg);
+    background-position: center center;
+    background-size: cover;
+    padding: 30px 0 15px;
+}
+
+.dron2_contact_area .airFlue_section_title_inner h2,
+.dron2_contact_area .airFlue_section_title_inner h3 {
+    color: #fff;
+}
+
+.dron2_contact_area .airFlue_section_title {
+    margin-bottom: 50px;
+}
+
+.apartment_area {
+    position: relative;
+    background-size: cover;
+    padding: 66px 35px 70px;
+    border-radius: 10px;
+    text-align: left;
+    box-shadow: 0px 0px 0px 0px rgb(0 0 0 / 50%);
+}
+
+.apartment_text h1 {
+    font-size: 17px;
+    margin-bottom: 5px;
+    color: #0d1f38;
+}
+
+.apartment_text h2 {
+    margin-bottom: 40px;
+    font-size: 38px;
+}
+
+.airFlue_apartment_form input,
+.airFlue_apartment_form form select,
+.wpcf7-form-control-wrap textarea,
+.wpcf7-form-control-wrap a,
+.wpcf7-form-control-wrap input,
+.twr_form_box textarea {
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;
+    border-color: #3c4353;
+    padding: 10px 0px 23px 20px;
+    background-color: #FFFFFF00;
+}
+
+.airFlue_apartment_form form select,
+.airFlue_apartment_form input {
+    width: 100%;
+    height: 45px;
+    border-radius: 5px;
+    outline: 0;
+    margin-bottom: 23px;
+    color: #fff;
+}
+
+.airFlue_apartment_form input,
+.twr_form_box textarea {
+    border: 1px solid #f1f1f1;
+    width: 100%;
+    font-size: 16px;
+    color: #888;
+}
+
+.airFlue_apartment_form textarea {
+    height: 150px;
+    padding-top: 10px;
+    padding-left: 30px;
+    background: #fff;
+}
+
+.airFlue_apartment_form .btn {
+    margin-top: -10px;
+    background: #FE688B;
+    transition: .5s;
+    border-radius: 0px;
+}
+
+.airFlue_apartment_form .btn:hover {
+    background-color: #14b1bb;
+    ;
+}
+
+.dron_photography_area {
+    padding: 48px 0 98px;
+}
+
+.form-control:focus {
+    color: #495057;
+    background-color: #fff;
+    border-color: #80bdff;
+}
+
+.airFlue_apartment_form form select,
+.airFlue_apartment_form form select,
+.airFlue_apartment_form input {
+    width: 100%;
+    height: 66px;
+    border-radius: 5px;
+    outline: none;
+    margin-bottom: 20px;
+    background: #fff;
+    padding: 0px 30px;
+}
+
+.airFlue_apartment_form input,
+.airFlue_apartment_form form select,
+.wpcf7-not-valid-tip,
+.airFlue_apartment_form input::-webkit-input-placeholder,
+.wpcf7-form-control-wrap input,
+.wpcf7-form-control-wrap input::-webkit-input-placeholder,
+.wpcf7-form-control-wrap a,
+.wpcf7-form-control-wrap a::-webkit-input-placeholder,
+.wpcf7-form-control-wrap textarea,
+.wpcf7-form-control-wrap textarea::-webkit-input-placeholder,
+.wpcf7-submit::-webkit-input-placeholder,
+.airFlue_apartment_form form select option {
+    color: #888;
+}
+
+.airFlue_apartment_form textarea::placeholder {
+    color: #888;
+}
+
+.airFlue_apartment_form .btn {
+    border: 0 none;
+    display: inline-block;
+    padding: 15px 30px;
+    background: #0d1f38;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 5px;
+    margin: 10x 0 0;
+    margin: 20px 0 0;
+}
+
+.airFlue_apartment_form .btn:hover {
+    background: #02101e;
+}
+
+.dron2_contact_area .play-overlay,
+.dron2_contact_area .video-item a {
+    top: 215px;
+    left: -106px;
+}
+
+.dron2_contact_area .video-item a {
+    background-image: linear-gradient(90deg, #0c1d60 0%, #0d1f38 100%);
+}
+
+.dron2_contact_area .airFlue_all_color_v i {
+    color: #fff;
+}
+
+/* ===== Contact Area CSS ===== */
+.map_inner_area iframe {
+    border: none;
+    width: 100%;
+    height: 500px;
+    margin-bottom: -9px;
+}
+
+.dron_contact_area2 {
+    background-image: url(../../images/dron/testi-bg.jpg);
+    background-position: center center;
+    background-size: cover;
+    padding: 110px 0 90px;
+}
+
+.dron_contact_area2 .apartment_area {
+    box-shadow: 0px 0px 65px 0px rgba(0, 0, 0, .08);
+    position: relative;
+    background-size: cover;
+    padding: 60px 35px 60px;
+    border-radius: 10px;
+    text-align: left;
+    background: #fff;
+}
+
+.dron_contact_area2 .airFlue_apartment_form input,
+.dron_contact_area2 .airFlue_apartment_form form select,
+.dron_contact_area2 .airFlue_apartment_form textarea {
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;
+    border-color: #f1f1f1;
+    color: #888 !important;
+    font-size: 17px;
+    margin-bottom: 23px;
+}
+
+.dron_contact_area2 .airFlue_apartment_form input::placeholder,
+.dron_contact_area2 .airFlue_apartment_form form select::placeholder,
+.dron_contact_area2 .airFlue_apartment_form textarea::placeholder {
+    color: #888;
+}
+
+.dron_contact_area2 .airFlue_apartment_form .btn {
+    border: 0 none;
+    display: inline-block;
+    padding: 15px 30px;
+    background: #0d1f38;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 5px;
+    margin: 0;
+    font-family: inherit;
+    width: 100%;
+}
+
+.dron_contact_area2 .airFlue_apartment_form form select option {
+    color: #888;
+}
+
+.dron_contact_area2 .twr_form_box textarea {
+    margin-bottom: 18px;
+}
+
+.dron_contact_area2 .airFlue_apartment_form .btn:hover {
+    background: #02101e;
+}
+
+.contact_content_inner .airFlue_section_title {
+    margin-bottom: 25px;
+}
+
+.contact_content_inner .airFlue_section_title_inner p {
+    width: 95%;
+    padding: 20px 0px 0px 0px;
+}
+
+.contact_content_inner {
+    margin-top: 27px;
+}
+
+.contact_content_inner .airFlue_s_flex {
+    display: flex;
+}
+
+.contact_content_inner .service_top_text {
+    display: block;
+}
+
+.contact_content_inner .em-service2.sleft .em-service-icon {
+    margin-right: 20px;
+    margin-top: 10px;
+}
+
+.contact_content_inner .all_icon_color i {
+    display: inline-block;
+    text-align: center;
+    font-size: 20px;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 50px;
+    background: #0d1f38;
+    transition: .5s;
+}
+
+.contact_content_inner .em-service-title h3 {
+    font-size: 20px;
+}
+
+.contact_content_inner .em-service2.sleft {
+    text-align: left;
+    padding: 0;
+    box-shadow: none;
+    background-color: transparent;
+    border-radius: 0;
+    text-align: left;
+    margin-bottom: 25px;
+}
+
+.contact_content_inner .all_color_service:hover i {
+    background-color: #000;
+}
+
+/* ===== 23. Portfolio Area CSS ===== */
+.dron_portfolio_bg_area {
+    background-image: url(../../images/dron/portfolio-bg.html);
+    padding: 92px 0 75px;
+}
+
+.dron_portfolio_bg_area .airFlue_section_title {
+    margin-bottom: 0;
+}
+
+.dron_portfolio_bg_area .airFlue_section_title_inner h1,
+.dron_portfolio_bg_area .airFlue_section_title_inner h2,
+.dron_portfolio_bg_area .airFlue_section_title_inner h3 {
+    color: #fff;
+}
+
+.dron_portfolio_bg_area .airFlue_section_title_inner p {
+    color: #fff;
+    font-family: "Montserrat Alternates", Sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 1.3px;
+    width: 100% !important;
+    margin-top: 0;
+}
+
+.title_btn a {
+    color: #000;
+    font-family: "Montserrat Alternates", Sans-serif;
+    font-size: 17px;
+    font-weight: 700;
+    letter-spacing: 1.3px;
+    background-color: #fff;
+    border-style: solid;
+    border-width: 0;
+    border-radius: 5px;
+    margin: 70px 0 0;
+    padding: 15px 30px;
+    display: inline-block;
+}
+
+.title_btn a:hover {
+    color: #fff;
+    background-color: #000;
+}
+
+/* ===== Portfolio Area CSS ===== */
+.dron_portfolio_area {
+    padding: 80px 0px 102px;
+}
+
+.airFlue_single_pslide {
+    overflow: hidden;
+}
+
+.airFlue_pslide_image {
+    position: relative;
+    overflow: hidden;
+    padding: 15px;
+}
+
+.airFlue_pslide_image img {
+    width: 100%;
+    transition: 1s;
+    border-radius: 18px;
+}
+
+.airFlue_pslide_image::before {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: #00000080;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    transform: scale(0);
+    transition: .5s;
+    z-index: 1;
+}
+
+.airFlue_single_pslide:hover .airFlue_pslide_image::before {
+    transform: scale(1.2)
+}
+
+.airFlue_single_pslide:hover .airFlue_pslide_image img {
+    transform: scale(1.2)
+}
+
+.airFlue_pslide_custom a {
+    position: absolute;
+    top: 0px;
+    left: 40px;
+    width: 0px;
+    height: 80px;
+    line-height: 80px;
+    border-radius: 5px;
+    font-size: 30px;
+    background: #fff;
+    color: #0d1f38;
+    text-align: center;
+    z-index: 99;
+    opacity: 0;
+    transition: .5s;
+    display: inline-block;
+}
+
+.airFlue_single_pslide:hover .airFlue_pslide_custom a {
+    width: 80px;
+    opacity: 1;
+}
+
+.airFlue_pslide_custom a:hover {
+    color: #0d1f38;
+    z-index: 999;
+    background: #0a0a0a;
+}
+
+.airFlue_content_pslide_text {
+    position: absolute;
+    bottom: -100px;
+    left: 50px;
+    right: 30px;
+    transition: .5s;
+    opacity: 0;
+    z-index: 2;
+    text-align: left;
+}
+
+.airFlue_single_pslide:hover .airFlue_content_pslide_text {
+    opacity: 1;
+    bottom: 20px;
+}
+
+.airFlue_single_pslide:hover .airFlue_pslide_custom {
+    bottom: -30px;
+}
+
+.airFlue_content_pslide_text h3 {
+    margin-bottom: 0;
+}
+
+.airFlue_content_pslide_text h3 a {
+    color: #fff;
+    transition: .5s;
+}
+
+.airFlue_content_pslide_text h3 a:hover {
+    color: #0d1f38;
+}
+
+.airFlue_content_pslide_text p {
+    color: #fff;
+}
+
+.em_portfolio_area .airFlue_section_title {
+    position: relative;
+    padding-bottom: 35px;
+}
+
+.positi_3.pprotfolio4 {
+    padding: 20px 10px 23px;
+    border: none;
+    position: absolute;
+    bottom: -100px;
+    left: 0;
+    right: 0;
+    z-index: 9;
+    -webkit-transition: .5s;
+    transition: .5s;
+    text-align: center;
+}
+
+.single_protfolio:hover .positi_3.pprotfolio4 {
+    bottom: 0;
+}
+
+.positi_3.pprotfolio4 {
+    background: #0d1f38;
+}
+
+.positi_3 .porttitle_inner4 h3 a,
+.positi_3 .porttitle_inner4 p span {
+    color: #fff;
+}
+
+.portfolio_nav {
+    padding: 0px 0 30px;
+}
+
+.portfolio_nav ul {}
+
+.portfolio_nav ul li {
+    display: inline;
+}
+
+.portfolio_nav ul li {
+    border-radius: 5px;
+    cursor: pointer;
+    display: inline-block;
+    margin: 0 5px 10px;
+    padding: 10px 20px;
+    position: relative;
+    transition: .5s;
+    border: 1px solid #f3eaea;
+}
+
+.prot_wrap {
+    overflow: hidden;
+}
+
+.single_protfolio {
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 24px;
+}
+
+.prot_thumb {}
+
+.prot_thumb img {
+    display: block;
+    transform: scale(1);
+    transition: all 0.5s ease 0s;
+    width: 100%;
+}
+
+.single_protfolio:hover .prot_thumb img {
+    transform: scale(1.1);
+}
+
+.prot_content {
+    position: absolute;
+    text-align: center;
+    transition: .5s;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 0;
+    z-index: 9;
+}
+
+.multi_gallery.prot_content {
+    height: 90%;
+    width: 80%;
+    right: 10%;
+    top: 5%;
+    bottom: 5%;
+    left: 10%;
+}
+
+.single_protfolio:hover .prot_content {
+    opacity: 1;
+}
+
+.prot_content h3 {
+    margin: 0;
+    text-transform: capitalize;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.prot_content h3 a {
+    font-size: 23px;
+    font-weight: 700;
+    text-transform: capitalize;
+    -webkit-transition: .5s;
+    transition: .5s;
+    color: #fff;
+    margin-bottom: 0;
+    display: inline-block;
+}
+
+.prot_content h3 a:hover {
+    color: #0d1f38;
+}
+
+.prot_content p {
+    line-height: 1.2;
+    margin: 5px 0 0;
+}
+
+.prot_content p span {
+    display: inline-block;
+    color: #fff;
+}
+
+.single_protfolio:hover .prot_content {
+    opacity: 1;
+    transform: scale(1, 1);
+}
+
+.porttitle_inner span,
+.porttitle_inner4 span,
+.prot_content span {
+    position: relative;
+    margin: 0 2px;
+}
+
+.prot_content span:before,
+.porttitle_inner4 span:before,
+.porttitle_inner span:before {
+    bottom: 0;
+    content: ",";
+    position: absolute;
+    right: -5px;
+}
+
+.porttitle_inner span:last-child:before,
+.prot_content span:last-child:before,
+.porttitle_inner4 span:last-child:before {
+    content: "";
+}
+
+.nospace.col-xs-12 {
+    padding: 0px;
+}
+
+.nospace .single_protfolio {
+    margin-bottom: 0px;
+}
+
+/* load button css */
+.gallery_load_button {}
+
+.gallery_load_button a {
+    padding: 7px 15px;
+    display: inline-block;
+    font-size: 17px;
+    margin-top: 0px;
+}
+
+.prot_wrap.nospace .gallery_load_button a {
+    margin-top: 30px;
+}
+
+/* single portfolio */
+.pimgs img {
+    height: 465px;
+    width: 100%;
+}
+
+.prots-contentg p {}
+
+/*style 1 */
+.em_port_content {
+    height: 100%;
+    opacity: 1;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    top: 0;
+    transition: all 0.5s ease 0s;
+    width: 100%;
+    z-index: 9;
+    left: 0;
+    top: -100%;
+    width: 100%;
+    transition: .5s;
+    text-align: center;
+}
+
+.pstyle_1 .porttitle_inner h3 {
+    padding-bottom: 0px;
+}
+
+.pstyle_1 .prot_content p {
+    margin: 2px 0 0;
+}
+
+.pstyle_1 .single_protfolio {
+    -webkit-transition: .5s;
+    transition: .5s;
+}
+
+.portfolio_readmore_btn {
+    padding-top: 23px;
+}
+
+.portfolio_readmore_btn>a {
+    border-radius: 5px;
+    display: inline-block;
+    padding: 6px 21px;
+    text-transform: uppercase;
+    -webkit-transition: .3s;
+    transition: .3s;
+    border: 1px solid transparent;
+}
+
+.pstyle_1 .picon a {
+    background: transparent;
+    border-radius: 5px;
+    display: inline-block;
+    font-size: 25px;
+    height: 50px;
+    line-height: 50px;
+    margin: 0 8px 11px;
+    width: 50px;
+    transition: .5s;
+    color: #fff;
+}
+
+.picon a:hover {
+    border-color: #191f2d;
+    background: #191f2d;
+}
+
+.pstyle4 .prot_thumb {
+    overflow: hidden;
+    position: relative;
+}
+
+.pprotfolio4 {
+    box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.7);
+    padding: 17px 10px 20px;
+}
+
+.pprotfolio4 {
+    padding: 20px 10px 23px;
+}
+
+.porttitle_inner4 h3 {
+    margin: 0;
+}
+
+.porttitle_inner4 h3 a {}
+
+.porttitle_inner4 p {
+    margin-bottom: 0;
+}
+
+.porttitle_inner4 p span {
+    display: inline-block;
+}
+
+.portfolio_nav ul li.current_menu_item,
+.portfolio_nav ul li:hover {
+    border-color: #0d1f38;
+    background: #0d1f38;
+    color: #fff;
+}
+
+.prot_content {
+    background: #0d1f3880;
+}
+
+.pprotfolio4 {
+    box-shadow: 0 10px 16px 0 rgba(0, 0, 0, .7);
+    padding: 30px 10px 30px;
+    border: 1px solid #f1f1f1;
+    border-top: 0 solid #f1f1f1;
+}
+
+.portfolio_nav {
+    text-align: center;
+}
+
+.page-numbers span.current,
+.paginations a.current,
+.paginations a:hover {
+    border-color: #0d1f38;
+    background: #0d1f38;
+    color: #fff;
+}
+
+ul.page-numbers a.page-numbers {
+    box-shadow: 0 10px 40px 0 rgba(50, 65, 141, .12);
+}
+
+.page-numbers,
+.tutor-pagination-wrap a,
+.tutor-pagination-wrap span.page-numbers.current,
+a.page-numbers {
+    border-radius: 5px;
+    margin-right: 10px;
+    padding: 15px 24px;
+    font-size: 19px;
+    line-height: 1;
+    -webkit-transition: .5s;
+    transition: .5s;
+}
+
+.paginations a {
+    color: #888;
+}
+
+.page-numbers li {
+    display: inline-block;
+}
+
+.paginations {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.portfolio_4column_gutter .single_protfolio {
+    margin-bottom: 0px;
+}
+
+/* port style 3 */
+.em_plus_port {
+    position: absolute;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+}
+
+.prot_content_inner {
+    left: 50%;
+    position: absolute;
+    top: 54%;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    width: 100%;
+    z-index: 10;
+    -webkit-transition: all .3s ease-in-out .3s;
+    transition: all .3s ease-in-out .3s;
+    opacity: 0;
+}
+
+.single_protfolio:hover .prot_content_inner {
+    top: 50%;
+    opacity: 1;
+}
+
+.picon a {
+    border-radius: 5px;
+    display: inline-block;
+    font-size: 20px;
+    height: 50px;
+    line-height: 50px;
+    margin: 0 3px 11px;
+    width: 50px;
+    text-align: center;
+    color: #fff;
+}
+
+.picon a:hover {
+    border-color: #000;
+}
+
+.picon a:hover {
+    background-color: #000;
+}
+
+/*style 1 */
+.em_port_content {
+    height: 100%;
+    opacity: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    position: absolute;
+    right: 0;
+    text-align: center;
+    top: 0;
+    -webkit-transition: all 0.5s ease 0s;
+    transition: all 0.5s ease 0s;
+    width: 100%;
+    z-index: 9;
+    left: 0;
+    top: -100%;
+    width: 100%;
+    -webkit-transition: .5s;
+    transition: .5s;
+    text-align: center;
+}
+
+.pstyle_1 .porttitle_inner h3 {
+    padding-bottom: 0px;
+}
+
+.pstyle_1 .porttitle_inner h3 a {}
+
+.pstyle_1 .porttitle_inner p {}
+
+.pstyle_1 .prot_content p {
+    margin: 2px 0 0;
+}
+
+.pstyle_1 .single_protfolio {
+    -webkit-transition: .5s;
+    transition: .5s;
+}
+
+.portfolio_readmore_btn {
+    padding-top: 23px;
+}
+
+.portfolio_readmore_btn>a {
+    border-radius: 5px;
+    display: inline-block;
+    padding: 6px 21px;
+    text-transform: uppercase;
+    -webkit-transition: .3s;
+    transition: .3s;
+    border: 1px solid transparent;
+}
+
+.port_3column_area .pstyle_1 .picon a {
+    background: transparent;
+    border-radius: 5px;
+    display: inline-block;
+    font-size: 25px;
+    height: 50px;
+    line-height: 50px;
+    margin: 0 8px 11px;
+    width: 50px;
+    -webkit-transition: .5s;
+    transition: .5s;
+}
+
+.dron_portfolio_area .airFlue_button_area {
+    margin: 30px auto 0;
+}
+
+.dron_portfolio_area .airFlue_btn {
+    padding: 18px 51px;
+}
+
+/* ===== Portfolio Area CSS ===== */
+.pstyle2.pstyle3 .prot_content_inner {
+    left: 3000px;
+    position: absolute;
+    top: 60%;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    width: 100%;
+    z-index: 10;
+    -webkit-transition: all .3s ease-in-out .3s;
+    transition: all .3s ease-in-out .3s;
+    opacity: 0;
+    padding: 15px 0 20px 20px;
+    -webkit-transition: .5s;
+    transition: .5s;
+}
+
+.pstyle2.pstyle3 .prot_content_inner {
+    text-align: left;
+}
+
+.pstyle2.pstyle3 .prot_content_inner {
+    background: #0d1f38;
+}
+
+.pstyle2.pstyle3 .single_protfolio:hover .prot_content_inner {
+    left: 75%;
+}
+
+.pstyle2 .single_protfolio:hover .prot_content_inner {
+    top: 50%;
+    opacity: 1;
+}
+
+/* portfolio grid area css */
+.port_style02 .pstyle2 .prot_content_inner {
+    left: 50%;
+    position: absolute;
+    top: 60%;
+    transform: translateX(-50%) translateY(-50%);
+    width: 100%;
+    z-index: 10;
+    transition: all .3s ease-in-out .3s;
+    opacity: 0;
+}
+
+.port_style02 .prot_content h3 a {
+    font-size: 23px;
+    font-weight: 700;
+    text-transform: capitalize;
+    transition: .5s;
+    color: #fff;
+    margin-bottom: 0px;
+    display: inline-block;
+}
+
+.port_style02 .picon a:hover {
+    border-color: #0a0a0a;
+    background: #0a0a0a;
+}
+
+.port_style02 .single_protfolio {
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.port_style02 .prot_content h3 a:hover {
+    color: #0d1f38;
+}
+
+/* portfolio grid area css */
+
+.portfolio_style2 .port_style02 .pstyle_1 .prot_content_inner {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    left: 50%;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    z-index: 10;
+}
+
+.portfolio_style2 .prot_content {
+    position: absolute;
+    text-align: center;
+    -webkit-transition: .5s;
+    transition: .5s;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 1;
+    z-index: 9;
+}
+
+.portfolio_style2.pstyle2 .single_protfolio:hover .prot_content_inner {
+    top: 50%;
+    opacity: 1;
+    left: 50%;
+    right: 50%;
+    transform: translateX(-50%), translateY(-50%);
+    transition: 0;
+}
+
+.portfolio_style2 .prot_content h3 a {
+    margin-bottom: 0;
+}
+
+.portfolio_style2 .prot_content_inner {
+    transition: none;
+    opacity: 1;
+}
+
+.portfolio_style2 .single_protfolio:hover .prot_content {
+    opacity: 1;
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1);
+}
+
+.portfolio_style2 .prot_content h3 a:hover {
+    color: #0d1f38;
+}
+
+.portfolio_style2 .prot_content h3 a:hover {
+    color: #0d1f38;
+}
+
+/* portfolio 3column area css */
+.portfolio_grid .airFlue_section_title {
+    margin-bottom: 30px;
+}
+
+.port_gutter .single_protfolio {
+    margin-bottom: 0;
+}
+
+.portfolio_grid .airFlue_section_title {
+    margin-bottom: 30px;
+}
+
+.portfolio_grid .portfolio_nav {
+    padding: 0px 0 45px;
+}
+
+.portfolio_grid .prot_content_inner {
+    top: 50%;
+}
+
+.portfolio_grid .pstyle_1 .picon a {
+    background: transparent;
+    transition: .5s;
+}
+
+.portfolio_grid .prot_content_inner {
+    transition: none;
+}
+
+.portfolio_readmore_btn>a:hover,
+.pstyle_1 .picon a:hover {
+    background: #0d1f38;
+}
+
+.port_4column .picon a {
+    background: #0d1f38;
+}
+
+.port_4column .picon a:hover {
+    background: #0d1f68;
+}
+
+.port_4column .airFlue_section_title {
+    margin-bottom: 19px;
+}
+
+.port_4column .portfolio_nav {
+    padding: 0px 0 45px;
+}
+
+/* ===== 24. Tab Area CSS ===== */
+.dron_tab_area {
+    padding: 100px 0 100px;
+}
+
+.airFlue_adv_tab_area {
+    text-align: left;
+    padding-right: 20px;
+}
+
+.nav-tabs {
+    justify-content: space-around;
+    border-bottom: none;
+}
+
+.airFlue_taba_style1 .nav-tabs .nav-item {
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.nav-tabs .nav-link:hover,
+.airFlue_taba_style1 .nav-tabs .nav-item.show .nav-link,
+.airFlue_taba_style1 .nav-tabs .nav-link.active {
+    background: #0d1f38;
+}
+
+.nav-tabs .nav-item:hover i,
+.nav-tabs .nav-link:hover,
+.airFlue_icon_adn a,
+.airFlue_taba_style1 .nav-tabs .nav-item.show .nav-link,
+.airFlue_taba_style1 .nav-tabs .nav-link.active {
+    color: #fff;
+}
+
+.nav-tabs span {
+    float: left;
+}
+
+.airFlue_taba_style1 .nav-tabs span {
+    display: block;
+    margin: 0 15px;
+}
+
+.airFlue_taba_style1 .nav-tabs .nav-link {
+    margin-right: 15px;
+    border: 0;
+    border-radius: 5px;
+    font-size: 17px;
+    padding: 20px 25px;
+    position: relative;
+    box-shadow: 0 0 25px 2px rgba(196, 206, 213, .2);
+    -webkit-transition: .5s;
+    transition: .5s;
+}
+
+.airFlue_taba_style1 .nav-tabs .nav-link {
+    color: #0d1f38;
+}
+
+.airFlue_taba_style1 .nav-tabs .nav-link {
+    background: #fff;
+}
+
+.nav-tabs .nav-link:hover,
+.airFlue_taba_style1 .nav-tabs .nav-item.show .nav-link,
+.airFlue_taba_style1 .nav-tabs .nav-link.active {
+    background: #0d1f38;
+}
+
+.nav-tabs .nav-item:hover i,
+.nav-tabs .nav-link:hover,
+.airFlue_icon_adn a,
+.airFlue_taba_style1 .nav-tabs .nav-item.show .nav-link,
+.airFlue_taba_style1 .nav-tabs .nav-link.active {
+    color: #fff;
+}
+
+.airFlue_adv_tab_content {
+    margin: 15px 20px 30px 0;
+}
+
+.tab-content>.active {
+    display: block;
+}
+
+.tab-content li,
+.tab-content ol,
+.tab-content ul {
+    font-style: normal;
+    font-weight: 400;
+    list-style: auto;
+    margin-left: -12px;
+}
+
+/* video page area */
+.airFlue_youtube_video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: -99;
+}
+
+.airFlue_youtube_video iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+
+.tx_golobal_color {
+    background: #0d1f38;
+}
+
+.tx_btn_global_color:hover {
+    background: #000;
+}
