@@ -2303,6 +2303,8 @@ mc4wp-form-fields p,
     margin-right: 5px;
     margin-bottom: 5px;
     background: #0d1f68;
+    position: relative;
+    z-index: 999;
 }
 
 .air-desdroniption-area .social-icons a:hover {

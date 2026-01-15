@@ -2167,6 +2167,10 @@
 
 /* ------------------------------------------------- Small Mobile : 320 ---------------------------------------------------*/
 @media (max-width: 767px) {
+    .dron_process_area .sub-border-2 {
+        height: auto;
+    }
+
     .service_middle_img .single_video {
         height: 100vh;
     }
